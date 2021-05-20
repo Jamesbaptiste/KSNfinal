@@ -234,7 +234,7 @@ section {
   height: 300px;
   cursor: pointer;
 }
-.menu .content .box:hover {
+.menu .content .box .imgBx .centered:hover {
   opacity: 0.5;
   background: #000;
 }
