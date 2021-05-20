@@ -18,9 +18,38 @@ function toggleMenu() {
 }
 
 function showDescription() {
-  const descriptionShow = document.querySelector('.showDescription');
+  // const descriptionShow = document.querySelector('.showDescription');
+  const holidayDescription = document.getElementById('holiday');
 
-  descriptionShow.classList.toggle('active');
+  holidayDescription.classList.toggle('active');
+}
+
+function carDescription() {
+  const carDescription = document.getElementById('car');
+
+  carDescription.classList.toggle('active');
+}
+
+function watchDescription() {
+  const watchDescription = document.getElementById('watch');
+
+  watchDescription.classList.toggle('active');
+}
+function studentDescription() {
+  const studentDescription = document.getElementById('student');
+
+  studentDescription.classList.toggle('active');
+}
+function shopDescription() {
+  const shopDescription = document.getElementById('shop');
+
+  shopDescription.classList.toggle('active');
+}
+
+function legalDescription() {
+  const legalDescription = document.getElementById('legal');
+
+  legalDescription.classList.toggle('active');
 }
 
 // const images = [
