@@ -234,7 +234,7 @@ section {
   height: 300px;
   cursor: pointer;
 }
-.menu .content .box .imgBx:hover {
+.menu .content .box:hover {
   opacity: 0.5;
   background: #000;
 }
@@ -705,7 +705,7 @@ section {
 
 @media (max-width: 768px) {
   .banner .content h2 {
-    font-size: 9.2em;
+    font-size: 6.2em;
     color: #fff;
   }
 }
