@@ -283,6 +283,11 @@ section {
   opacity: 1;
 }
 
+.imgDescription:hover .imgBx {
+  visibility: hidden;
+  opacity: 1;
+}
+
 .menu .content .box .imgBx img {
   position: absolute;
   top: 0;
