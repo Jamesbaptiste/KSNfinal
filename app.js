@@ -17,6 +17,12 @@ function toggleMenu() {
   navigation.classList.toggle('active');
 }
 
+function showDescription() {
+  const descriptionShow = document.querySelector('.showDescription');
+
+  descriptionShow.classList.toggle('active');
+}
+
 // const images = [
 //   'assets/passports.jpg',
 //   // 'assets/boats.jpg',
