@@ -28,21 +28,21 @@ function toggleMenu() {
 //   // 'assets/sea.jpg',
 // ];
 
-const banner = document.querySelector('.banner');
+// const banner = document.querySelector('.banner');
 
-let i = 0;
-setInterval(function () {
-  banner.style.backgroundSize = 'cover';
-  banner.style.backgroundPosition = 'center';
-  banner.style.height = '100%';
-  banner.style.width = '100%';
-  banner.style.backgroundRepeat = 'no-repeat';
-  banner.style.backgroundImage = 'url(' + images[i] + ')';
-  i = i + 1;
-  if (i == images.length) {
-    i = 0;
-  }
-}, 5500);
+// let i = 0;
+// setInterval(function () {
+//   banner.style.backgroundSize = 'cover';
+//   banner.style.backgroundPosition = 'center';
+//   banner.style.height = '100%';
+//   banner.style.width = '100%';
+//   banner.style.backgroundRepeat = 'no-repeat';
+//   banner.style.backgroundImage = 'url(' + images[i] + ')';
+//   i = i + 1;
+//   if (i == images.length) {
+//     i = 0;
+//   }
+// }, 5500);
 
 // var slideIndex = 1;
 // showSlides(slideIndex);
