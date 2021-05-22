@@ -34,7 +34,7 @@ body {
   background: url(assets/ocean.mp4); */
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +102,7 @@ body {
   font-size: 6em;
   color: #fff;
   /* z-index: 100; */
-  -webkit-text-stroke: black 4px;
+  /* -webkit-text-stroke: black 4px; */
 }
 .banner .content h2 span {
   /* font-size: 5em; */
@@ -708,7 +708,7 @@ section {
   }
 
   .banner .content h2 {
-    font-size: 7em;
+    font-size: 4.2em;
     color: #fff;
   }
 
@@ -795,7 +795,7 @@ section {
 
 @media (max-width: 768px) {
   .banner .content h2 {
-    font-size: 6.2em;
+    font-size: 3em;
     color: #fff;
   }
 }
