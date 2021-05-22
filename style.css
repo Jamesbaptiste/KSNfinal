@@ -596,9 +596,9 @@ section {
   header .navigation.active {
     position: fixed;
     width: 100%;
-    height: calc(100% - 67px);
+    height: calc(100% - 0px);
     background: #fff;
-    top: 67px;
+    top: 0px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -631,6 +631,7 @@ section {
     background-position: center;
     cursor: pointer;
     z-index: 10000;
+    filter: invert(1);
   }
 
   .menuToggle.active {
@@ -642,6 +643,7 @@ section {
     background-size: 25px;
     background-position: center;
     cursor: pointer;
+    filter: invert(1);
   }
 
   header.sticky .menuToggle {
