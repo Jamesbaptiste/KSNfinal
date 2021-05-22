@@ -247,6 +247,9 @@ section {
   font-size: 3em;
   font-weight: 700;
   text-align: center;
+  transition: opacity 1.2s, visibility 1.2s;
+
+  /* opacity: 0; */
   /* -webkit-text-stroke: 2px #fff; */
 }
 
@@ -263,7 +266,8 @@ section {
   left: 0;
   right: 0;
   /* background: rgba(29, 106, 154, 0.72); */
-  background: #000;
+  /* background: #000; */
+  background: rgba(0, 0, 0, 0.6);
 
   /* filter: blur(0.3); */
   color: #fff;
@@ -299,6 +303,11 @@ section {
 .imgBx .showDescription.active {
   visibility: visible;
   opacity: 1;
+}
+
+.imgBx .centered.active {
+  visibility: visible;
+  opacity: 0;
 }
 
 /* .imgDescription:hover {

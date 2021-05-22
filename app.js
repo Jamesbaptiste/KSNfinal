@@ -20,36 +20,48 @@ function toggleMenu() {
 function showDescription() {
   // const descriptionShow = document.querySelector('.showDescription');
   const holidayDescription = document.getElementById('holiday');
+  const dreamHoliday = document.getElementById('dreamHoliday');
 
   holidayDescription.classList.toggle('active');
+  dreamHoliday.classList.toggle('active');
 }
 
 function carDescription() {
   const carDescription = document.getElementById('car');
+  const cars = document.getElementById('cars');
 
   carDescription.classList.toggle('active');
+  cars.classList.toggle('active');
 }
 
 function watchDescription() {
   const watchDescription = document.getElementById('watch');
+  const watches = document.getElementById('watches');
 
   watchDescription.classList.toggle('active');
+  watches.classList.toggle('active');
 }
 function studentDescription() {
   const studentDescription = document.getElementById('student');
+  const students = document.getElementById('students');
 
   studentDescription.classList.toggle('active');
+  students.classList.toggle('active');
 }
 function shopDescription() {
   const shopDescription = document.getElementById('shop');
+  const shopping = document.getElementById('shopping');
 
   shopDescription.classList.toggle('active');
+  shopping.classList.toggle('active');
 }
 
 function legalDescription() {
   const legalDescription = document.getElementById('legal');
+  const legalCounsel = document.getElementById('legalCounsel');
 
   legalDescription.classList.toggle('active');
+  legalCounsel.classList.toggle('active');
 }
 
 // const images = [
