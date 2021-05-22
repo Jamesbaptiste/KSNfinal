@@ -244,7 +244,9 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 3em;
+  /* font-size: 3em; */
+  font-size: 2.8em;
+
   font-weight: 700;
   text-align: center;
   transition: opacity 1.2s, visibility 1.2s;
@@ -731,9 +733,21 @@ section {
 }
 
 @media (max-width: 375px) {
-  .banner .content h2 {
+  /* .banner .content h2 {
     font-size: 6.2em;
     color: #fff;
+  } */
+  .centered {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 320px) {
+  /* .banner .content h2 {
+    font-size: 6.2em;
+    color: #fff;
+  } */
+  .centered {
+    font-size: 2em;
   }
 }
 
