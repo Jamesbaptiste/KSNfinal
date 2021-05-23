@@ -63,6 +63,90 @@ function legalDescription() {
   legalDescription.classList.toggle('active');
   legalCounsel.classList.toggle('active');
 }
+//define language reload anchors
+let dataReload = document.querySelectorAll('[data-reload]');
+//language translation
+let language = {
+  eng: {
+    banner: 'We Are Here For You',
+    aboutUsTitle: 'About us',
+    about: 'This is the section where we talk about us.',
+    servicesTitle: 'Services',
+    service: 'These are our services listed below.',
+    dreamHol: 'Dream Holidays',
+    watches: 'watches',
+    cars: 'Exclusive cars',
+    students: 'Foreign students',
+    shopping: 'Personal shopper',
+    legalCounsel: 'Legal Counseling',
+    contactUs: 'contact',
+    sendMessage: 'contact',
+    homeNav: 'HOME',
+    aboutNav: 'About',
+    servicesNav: 'Services',
+    conactNavt: 'contactNav',
+
+    // Name: 'Name',
+  },
+  es: {
+    banner: 'Nosotras estamos aqui para ti',
+    aboutUsTitle: 'Sobre nosotros',
+    about: 'Esta es la sección donde hablamos de nosotros.',
+    servicesTitle: 'Servicios',
+    service: 'Estos son nuestros servicios que se enumeran a continuación.',
+    dreamHol: 'VACACIONES DE ENSUEÑO',
+    cars: 'COCHES EXCLUSIVOS',
+    watches: 'Relojes',
+    students: 'ESTUDIANTES EXTRANJEROS ',
+    shopping: 'comprador personal',
+    legalCounsel: 'CONSEJERIA LEGAL',
+    contactUs: 'Contacto',
+    sendMessage: 'enviar mensaje',
+    homeNav: 'Casa',
+    aboutNav: 'Acerca de',
+    servicesNav: 'Servicios',
+    contactNav: 'contacto',
+
+    // input:placeholder: 'Nombre',
+  },
+};
+//define language via window has
+if (window.location.hash) {
+  if (window.location.hash === '#es') {
+    content.textContent = language.es.banner;
+    aboutUsTitle.textContent = language.es.aboutUsTitle;
+    aboutUs.textContent = language.es.about;
+    servicesTitle.textContent = language.es.servicesTitle;
+    ourServices.textContent = language.es.service;
+    dreamHoliday.textContent = language.es.dreamHol;
+    cars.textContent = language.es.cars;
+    watches.textContent = language.es.watches;
+    students.textContent = language.es.students;
+    shopping.textContent = language.es.shopping;
+    legalCounsel.textContent = language.es.legalCounsel;
+    contactUs.textContent = language.es.contactUs;
+    sendMessage.textContent = language.es.sendMessage;
+    aboutNav.textContent = language.es.aboutNav;
+    servicesNav.textContent = language.es.servicesNav;
+    contactNav.textContent = language.es.contactNav;
+
+    // Name.textContent = language.es.Name;
+  }
+}
+
+// define language reload onclick
+// for (i = 0; i <= dataReload.length; i++) {
+//   dataReload[i].onclick = function () {
+//     location.reload();
+//   };
+// }
+for (i = 0; i <= dataReload.length - 1; i++) {
+  dataReload[i].onclick = function () {
+    setTimeout(function () {
+      location.reload();
+    }, 150); // adjust the timer that works for you (1000 = 1 second)
+  };
+}
 
 // const images = [
 //   'assets/passports.jpg',

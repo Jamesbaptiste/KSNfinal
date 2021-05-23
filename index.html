@@ -6,27 +6,47 @@
     <title>KSN Connections</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <a href="#" class="logo">KSN <span>Connections</span></a>
+      <!-- <a href="#eng" data-reload>English</a>
+      <a href="#es" data-reload>Espanol</a> -->
+
       <div class="menuToggle" onclick="toggleMenu()"></div>
       <ul class="navigation">
-        <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#menu" onclick="toggleMenu()">Services</a></li>
+        <li><a id="homeNav" href="#banner" onclick="toggleMenu()">Home</a></li>
+        <li>
+          <a id="aboutNav" bhref="#about" onclick="toggleMenu()">About</a>
+        </li>
+        <li>
+          <a id="servicesNav" href="#menu" onclick="toggleMenu()">Services</a>
+        </li>
         <!-- <li><a href="#expert" onclick="toggleMenu()">Gallery</a></li> -->
         <!-- <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li> -->
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li>
+          <a id="contactNav" href="#contact" onclick="toggleMenu()">Contact</a>
+        </li>
       </ul>
     </header>
-
+    <div class="flags">
+      <a href="#eng" data-reload class="text-center"
+        ><span class="flag-icon flag-icon-us"></span
+      ></a>
+      <a href="#es" data-reload class="text-center"
+        ><span class="flag-icon flag-icon-es"></span
+      ></a>
+    </div>
     <section class="banner" id="banner">
       <video playsinline preload="auto" autoplay muted loop>
         <source src="assets/ocean.mp4" type="video/mp4" />
       </video>
       <div class="content">
-        <h2>
+        <h2 id="content">
           We Are Here For <br />
           <span>You</span>
         </h2>
@@ -41,15 +61,8 @@
     <section class="about" id="about">
       <!-- <div class="row">
         <div class="col50"> -->
-      <h2 class="titleText"><span>A</span>bout Us</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-        illum quae fugiat error aut, eos qui tenetur autem velit unde quasi,
-        impedit, aliquam adipisci pariatur maxime ea totam temporibus corporis
-        ipsa. Ipsam nulla eveniet minus distinctio doloremque harum deserunt
-        dolorem assumenda maxime amet laudantium sit corporis totam, iste
-        aspernatur soluta?
-      </p>
+      <h2 id="aboutUsTitle" class="titleText"><span>A</span>bout Us</h2>
+      <p id="aboutUs">This is the section where we talk about us.</p>
       <!-- </div> -->
       <!-- <div class="col50">
           <div class="imgBx">
@@ -60,11 +73,8 @@
     </section>
     <section class="menu" id="menu">
       <div class="title">
-        <h2 class="titleText"><span>S</span>ervices</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-          asperiores.
-        </p>
+        <h2 id="servicesTitle" class="titleText"><span>S</span>ervices</h2>
+        <p id="ourServices">These are our services listed below.</p>
       </div>
       <div class="content">
         <div class="box">
@@ -337,7 +347,7 @@
     </section> -->
     <section class="contact" id="contact">
       <div class="title">
-        <h2 class="titleText"><span>C</span>ontact</h2>
+        <h2 id="contactUs" class="titleText"><span>C</span>ontact</h2>
         <!-- <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
           asperiores.
@@ -347,7 +357,7 @@
         <img src="" alt="" srcset="" />
       </div>
       <div class="contactForm">
-        <h3>Send Message</h3>
+        <h3 id="sendMessage">Send Message</h3>
 
         <div class="inputBox">
           <input type="text" placeholder="Name" />

@@ -66,6 +66,10 @@ body {
   align-items: center;
   background-size: cover; */
 }
+/* 
+header .flags {
+  border: 1px black solid;
+} */
 
 .banner:before {
   /* content: '';
@@ -129,6 +133,12 @@ body {
 
 /* .btn:hover {
   letter-spacing: 6px;
+} */
+/* .flags {
+  position: fixed;
+  z-index: 100;
+  top: 100px;
+  left: 20;
 } */
 header {
   position: fixed;
@@ -288,6 +298,12 @@ section {
 .menu .content .box .imgBx .centered:hover {
   opacity: 0.5;
   background: #000;
+}
+.flags {
+  position: fixed;
+  z-index: 100;
+  top: -3px;
+  right: 25px;
 }
 .centered {
   position: absolute;
