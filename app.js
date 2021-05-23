@@ -17,7 +17,7 @@ function toggleMenu() {
   navigation.classList.toggle('active');
 }
 
-function showDescription() {
+function holidayDescription() {
   // const descriptionShow = document.querySelector('.showDescription');
   const holidayDescription = document.getElementById('holiday');
   const dreamHoliday = document.getElementById('dreamHoliday');
