@@ -147,7 +147,7 @@ header {
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
@@ -302,9 +302,14 @@ section {
 .flags {
   position: fixed;
   z-index: 100;
-  top: -3px;
-  right: 25px;
+  top: 22px;
+  right: 11px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
 }
+
 .centered {
   position: absolute;
   top: 50%;
@@ -869,9 +874,9 @@ section {
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .banner .content h2 {
     font-size: 4em;
     color: #fff;
   }
-} */
+}

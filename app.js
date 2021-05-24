@@ -126,6 +126,7 @@ if (window.location.hash) {
     legalCounsel.textContent = language.es.legalCounsel;
     contactUs.textContent = language.es.contactUs;
     sendMessage.textContent = language.es.sendMessage;
+    homeNav.textContent = language.es.homeNav;
     aboutNav.textContent = language.es.aboutNav;
     servicesNav.textContent = language.es.servicesNav;
     contactNav.textContent = language.es.contactNav;
