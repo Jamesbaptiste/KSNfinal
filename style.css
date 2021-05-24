@@ -302,14 +302,26 @@ section {
 .flags {
   position: fixed;
   z-index: 100;
-  top: 22px;
+  top: 28px;
   right: 11px;
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  width: 65px;
   align-items: center;
 }
-
+.socials {
+  /* position: fixed; */
+  z-index: 100;
+  bottom: 22px;
+  right: 11px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  align-items: center;
+}
+.linked {
+  background-size: 30px;
+}
 .centered {
   position: absolute;
   top: 50%;
