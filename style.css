@@ -722,6 +722,10 @@ section {
   opacity: 1;
 }
 
+.headerSocial {
+  visibility: hidden;
+}
+
 @media (max-width: 991px) {
   header,
   header.sticky {
@@ -758,6 +762,16 @@ section {
 
   header .navigation.active li a:hover {
     color: #c4c5c9;
+  }
+
+  .headerSocial {
+    position: relative;
+    top: 180px;
+    width: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    visibility: visible;
   }
 
   .menuToggle {
@@ -849,7 +863,9 @@ section {
 
 @media (max-width: 530px) {
   .contact .title h2 {
-    color: #fff;
+    color: #000;
+    font-weight: 400;
+    -webkit-text-stroke: white 0.6px;
   }
 }
 

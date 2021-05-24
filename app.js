@@ -70,9 +70,10 @@ let language = {
   eng: {
     banner: 'We Are Here For You',
     aboutUsTitle: 'About us',
-    about: 'This is the section where we talk about us.',
+    about:
+      'At KSN Connections, we have experience of over 25 years providing our services worldwide, especially the USA, Central America, Europe, the Gulf Area and North Africa. The services we provide are entirely personalized, private, and exclusive. We adapt to the needs and preferences of each individual client and extend the possibility of personally accompany our clients throughout the entire process.',
     servicesTitle: 'Services',
-    service: 'These are our services listed below.',
+    // service: 'These are our services listed below.',
     dreamHol: 'Dream Holidays',
     watches: 'watches',
     cars: 'Exclusive cars',
@@ -85,15 +86,14 @@ let language = {
     aboutNav: 'About',
     servicesNav: 'Services',
     conactNavt: 'contactNav',
-
-    // Name: 'Name',
   },
   es: {
-    banner: 'Nosotras estamos aqui para ti',
+    banner: 'Estamos aqui para ti',
     aboutUsTitle: 'Sobre nosotros',
-    about: 'Esta es la sección donde hablamos de nosotros.',
+    about:
+      'En KSN Connections, contamos con una experiencia de más de 25 años proporcionando servicios por todo el mundo, especialmente en USA, América Central, Europa, el área del Golfo y el norte de Africa. Los servicios proporcionados son totalmente personalizados, privados y exclusivos. Nos adaptamos a las necesidades y preferencias de cada cliente con la posibilidad de acompañar personalmente a nuestros clientes durante todo el proceso.',
     servicesTitle: 'Servicios',
-    service: 'Estos son nuestros servicios que se enumeran a continuación.',
+    // service: 'Estos son nuestros servicios que se enumeran a continuación.',
     dreamHol: 'VACACIONES DE ENSUEÑO',
     cars: 'COCHES EXCLUSIVOS',
     watches: 'Relojes',
@@ -101,13 +101,11 @@ let language = {
     shopping: 'comprador personal',
     legalCounsel: 'CONSEJERIA LEGAL',
     contactUs: 'Contacto',
-    sendMessage: 'enviar mensaje',
+    sendMessage: 'Enviar mensaje',
     homeNav: 'Casa',
     aboutNav: 'Acerca de',
     servicesNav: 'Servicios',
-    contactNav: 'contacto',
-
-    // input:placeholder: 'Nombre',
+    contactNav: 'Contacto',
   },
 };
 //define language via window has
@@ -117,7 +115,7 @@ if (window.location.hash) {
     aboutUsTitle.textContent = language.es.aboutUsTitle;
     aboutUs.textContent = language.es.about;
     servicesTitle.textContent = language.es.servicesTitle;
-    ourServices.textContent = language.es.service;
+    // ourServices.textContent = language.es.service;
     dreamHoliday.textContent = language.es.dreamHol;
     cars.textContent = language.es.cars;
     watches.textContent = language.es.watches;
@@ -130,8 +128,6 @@ if (window.location.hash) {
     aboutNav.textContent = language.es.aboutNav;
     servicesNav.textContent = language.es.servicesNav;
     contactNav.textContent = language.es.contactNav;
-
-    // Name.textContent = language.es.Name;
   }
 }
 
@@ -141,6 +137,13 @@ if (window.location.hash) {
 //     location.reload();
 //   };
 // }
+// for (i = 0; i <= dataReload.length - 1; i++) {
+//   dataReload[i].onclick = function () {
+//     setTimeout(function () {
+//       location.reload();
+//     }, 150); // adjust the timer that works for you (1000 = 1 second)
+//   };
+// }
 for (i = 0; i <= dataReload.length - 1; i++) {
   dataReload[i].onclick = function () {
     setTimeout(function () {
@@ -148,7 +151,6 @@ for (i = 0; i <= dataReload.length - 1; i++) {
     }, 150); // adjust the timer that works for you (1000 = 1 second)
   };
 }
-
 // const images = [
 //   'assets/passports.jpg',
 //   // 'assets/boats.jpg',
