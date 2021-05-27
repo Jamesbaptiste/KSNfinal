@@ -83,7 +83,11 @@ let language = {
     homeNav: 'HOME',
     aboutNav: 'About',
     servicesNav: 'Services',
-    conactNavt: 'contactNav',
+    conactNav: 'contactNav',
+    contactName: 'Name',
+    contactEmail: 'Email',
+    contactMessage: 'What can we do for you?',
+    contactSend: 'Send',
   },
   es: {
     banner: `Estamos Aqui Para`,
@@ -100,10 +104,14 @@ let language = {
     legalCounsel: 'Consejeria Legal',
     contactUs: 'Contacto',
     sendMessage: 'Enviar Mensaje',
-    homeNav: 'Casa',
-    aboutNav: 'Acerca De',
+    homeNav: 'Inicio',
+    aboutNav: 'Sobre Nosostros',
     servicesNav: 'Servicios',
     contactNav: 'Contacto',
+    contactName: 'Nombre',
+    contactEmail: 'Correo Electrónico',
+    contactMessage: 'Que podemos hacer por ti?',
+    contactSend: 'Enviar',
   },
 };
 //define language via window has
@@ -124,11 +132,17 @@ if (window.location.hash) {
     legalCounsel.textContent = language.es.legalCounsel;
     contactUs.textContent = language.es.contactUs;
     sendMessage.textContent = language.es.sendMessage;
+    // Name.placeholder.textContent = language.es.contactName;
     homeNav.textContent = language.es.homeNav;
     aboutNav.textContent = language.es.aboutNav;
     servicesNav.textContent = language.es.servicesNav;
     contactNav.textContent = language.es.contactNav;
 
+    document.getElementById('Name').placeholder = 'Nombre';
+    document.getElementById('Email').placeholder = 'Correo Electrónico';
+    document.getElementById('messageBox').placeholder =
+      'Que podemos hacer por ti?';
+    document.getElementById('sendMessageBox').value = 'Enviar';
     document.getElementById('holiday').innerHTML =
       'Organizamos sus viajes de negocios / vacaciones a medida alrededor del mundo. Nos encargamos de que todas sus necesidades estén cubiertas sin preocuparse de nada solo de disfrutar.';
     document.getElementById('car').innerHTML =
