@@ -110,7 +110,7 @@ let language = {
     contactNav: 'Contacto',
     contactName: 'Nombre',
     contactEmail: 'Correo Electrónico',
-    contactMessage: 'Que podemos hacer por ti?',
+    contactMessage: 'Qué podemos hacer por ti?',
     contactSend: 'Enviar',
   },
 };
@@ -141,7 +141,7 @@ if (window.location.hash) {
     document.getElementById('Name').placeholder = 'Nombre';
     document.getElementById('Email').placeholder = 'Correo Electrónico';
     document.getElementById('messageBox').placeholder =
-      '¿Que podemos hacer por ti?';
+      '¿Qué podemos hacer por ti?';
     document.getElementById('sendMessageBox').value = 'Enviar';
     document.getElementById('holiday').innerHTML =
       'Organizamos sus viajes de negocios / vacaciones a medida alrededor del mundo. Nos encargamos de que todas sus necesidades estén cubiertas sin preocuparse de nada solo de disfrutar.';
