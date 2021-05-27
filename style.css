@@ -70,7 +70,7 @@ body {
   position: relative;
 }
 
-.banner .content h2 {
+.banner .content h3 {
   font-size: 6em;
   color: #fff;
 }
@@ -709,7 +709,7 @@ h2::first-letter {
 }
 
 @media (max-width: 400px) {
-  .banner .content h2 {
+  .banner .content h3 {
     font-size: 2.2em;
     color: #fff;
   }
@@ -727,14 +727,7 @@ h2::first-letter {
 }
 
 @media (max-width: 768px) {
-  .banner .content h2 {
-    font-size: 4em;
-    color: #fff;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner .content h2 {
+  .banner .content h3 {
     font-size: 4em;
     color: #fff;
   }
