@@ -1,8 +1,3 @@
-// window.addEventListener('scroll', function () {
-//   const header = document.querySelector('header');
-//   header.classList.toggle('sticky', window.scrollY > 0);
-// });
-
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 0);
@@ -65,10 +60,13 @@ function legalDescription() {
 }
 //define language reload anchors
 let dataReload = document.querySelectorAll('[data-reload]');
+
+// let joke = ('Ti'.style.color = 'green');
 //language translation
 let language = {
   eng: {
-    banner: 'We Are Here For You',
+    banner: `We Are Here For`,
+    ti: `you`,
     aboutUsTitle: 'About us',
     about:
       'At KSN Connections, we have experience of over 25 years providing our services worldwide, especially the USA, Central America, Europe, the Gulf Area and North Africa. The services we provide are entirely personalized, private, and exclusive. We adapt to the needs and preferences of each individual client and extend the possibility of personally accompany our clients throughout the entire process.',
@@ -88,22 +86,22 @@ let language = {
     conactNavt: 'contactNav',
   },
   es: {
-    banner: 'Estamos aqui para ti',
+    banner: `Estamos Aqui Para`,
+    ti: `Ti`,
     aboutUsTitle: 'Sobre nosotros',
     about:
       'En KSN Connections, contamos con una experiencia de más de 25 años proporcionando servicios por todo el mundo, especialmente en USA, América Central, Europa, el área del Golfo y el norte de Africa. Los servicios proporcionados son totalmente personalizados, privados y exclusivos. Nos adaptamos a las necesidades y preferencias de cada cliente con la posibilidad de acompañar personalmente a nuestros clientes durante todo el proceso.',
     servicesTitle: 'Servicios',
-    // service: 'Estos son nuestros servicios que se enumeran a continuación.',
-    dreamHol: 'VACACIONES DE ENSUEÑO',
-    cars: 'COCHES EXCLUSIVOS',
+    dreamHol: 'Vacaciones De Ensueño',
+    cars: 'Coches Exclusivos',
     watches: 'Relojes',
-    students: 'ESTUDIANTES EXTRANJEROS ',
-    shopping: 'comprador personal',
-    legalCounsel: 'CONSEJERIA LEGAL',
+    students: 'Estudiantes Extranjeros',
+    shopping: 'Comprador Personal',
+    legalCounsel: 'Consejeria Legal',
     contactUs: 'Contacto',
-    sendMessage: 'Enviar mensaje',
+    sendMessage: 'Enviar Mensaje',
     homeNav: 'Casa',
-    aboutNav: 'Acerca de',
+    aboutNav: 'Acerca De',
     servicesNav: 'Servicios',
     contactNav: 'Contacto',
   },
@@ -111,11 +109,13 @@ let language = {
 //define language via window has
 if (window.location.hash) {
   if (window.location.hash === '#es') {
+    // document.getElementById('content').innerHTML = `Estamos aqui para ti`;
+    // document.getElementById('ti').style.color = 'red';
+    ti.textContent = language.es.ti;
     content.textContent = language.es.banner;
     aboutUsTitle.textContent = language.es.aboutUsTitle;
     aboutUs.textContent = language.es.about;
     servicesTitle.textContent = language.es.servicesTitle;
-    // ourServices.textContent = language.es.service;
     dreamHoliday.textContent = language.es.dreamHol;
     cars.textContent = language.es.cars;
     watches.textContent = language.es.watches;
@@ -128,22 +128,21 @@ if (window.location.hash) {
     aboutNav.textContent = language.es.aboutNav;
     servicesNav.textContent = language.es.servicesNav;
     contactNav.textContent = language.es.contactNav;
+
+    document.getElementById('holiday').innerHTML =
+      'Organizamos sus viajes de negocios / vacaciones a medida alrededor del mundo. Nos encargamos de que todas sus necesidades estén cubiertas sin preocuparse de nada solo de disfrutar.';
+    document.getElementById('car').innerHTML =
+      'Podemos localizar y adquirir cualquier tipo de embarcación (en venta exclusiva o pública) al mejor precio. Especialidad en coches de series limitadas.';
+    document.getElementById('watch').innerHTML =
+      'Localizamos por todo el mundo relojes de lujo con diseños exclusivos.';
+    document.getElementById('student').innerHTML =
+      'Nos dedicamos a la inscripción del estudiante en la Universidad y le acompañamos en todo el proceso de adaptación e instalación.';
+    document.getElementById('shop').innerHTML =
+      'Le asesoramos y orientamos en la adquisicion de prendas y complementos de lujo.';
+    document.getElementById('legal').innerHTML =
+      'Damos la solución más acorde a sus necesidades.';
   }
 }
-
-// define language reload onclick
-// for (i = 0; i <= dataReload.length; i++) {
-//   dataReload[i].onclick = function () {
-//     location.reload();
-//   };
-// }
-// for (i = 0; i <= dataReload.length - 1; i++) {
-//   dataReload[i].onclick = function () {
-//     setTimeout(function () {
-//       location.reload();
-//     }, 150); // adjust the timer that works for you (1000 = 1 second)
-//   };
-// }
 for (i = 0; i <= dataReload.length - 1; i++) {
   dataReload[i].onclick = function () {
     setTimeout(function () {
@@ -151,64 +150,3 @@ for (i = 0; i <= dataReload.length - 1; i++) {
     }, 150); // adjust the timer that works for you (1000 = 1 second)
   };
 }
-// const images = [
-//   'assets/passports.jpg',
-//   // 'assets/boats.jpg',
-//   // 'assets/coast.jpg',
-//   // 'assets/hills.jpg',
-//   // 'assets/motorboat.jpg',
-//   // 'assets/road.jpg',
-//   // 'assets/lostboat.jpg',
-//   // 'assets/sea.jpg',
-// ];
-
-// const banner = document.querySelector('.banner');
-
-// let i = 0;
-// setInterval(function () {
-//   banner.style.backgroundSize = 'cover';
-//   banner.style.backgroundPosition = 'center';
-//   banner.style.height = '100%';
-//   banner.style.width = '100%';
-//   banner.style.backgroundRepeat = 'no-repeat';
-//   banner.style.backgroundImage = 'url(' + images[i] + ')';
-//   i = i + 1;
-//   if (i == images.length) {
-//     i = 0;
-//   }
-// }, 5500);
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides((slideIndex += n));
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName('mySlides');
-//   var dots = document.getElementsByClassName('demo');
-//   var captionText = document.getElementById('caption');
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = 'none';
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(' active', '');
-//   }
-//   slides[slideIndex - 1].style.display = 'block';
-//   dots[slideIndex - 1].className += ' active';
-//   captionText.innerHTML = dots[slideIndex - 1].alt;
-// }
