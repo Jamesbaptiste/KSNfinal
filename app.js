@@ -94,14 +94,14 @@ let language = {
     ti: `Ti`,
     aboutUsTitle: 'Sobre nosotros',
     about:
-      'En KSN Connections, contamos con una experiencia de más de 25 años proporcionando servicios por todo el mundo, especialmente en USA, América Central, Europa, el área del Golfo y el norte de Africa. Los servicios proporcionados son totalmente personalizados, privados y exclusivos. Nos adaptamos a las necesidades y preferencias de cada cliente con la posibilidad de acompañar personalmente a nuestros clientes durante todo el proceso.',
+      'En KSN Connections contamos con una experiencia de más de 25 años proporcionando servicios por todo el mundo, especialmente en USA, América Central, Europa, el área del Golfo y el norte de Africa. Los servicios proporcionados son totalmente personalizados, privados y exclusivos. Nos adaptamos a las necesidades y preferencias de cada cliente con la posibilidad de acompañar personalmente a nuestros clientes durante todo el proceso.',
     servicesTitle: 'Servicios',
     dreamHol: 'Vacaciones De Ensueño',
     cars: 'Coches Exclusivos',
     watches: 'Relojes',
     students: 'Estudiantes Extranjeros',
     shopping: 'Comprador Personal',
-    legalCounsel: 'Consejeria Legal',
+    legalCounsel: 'Consejería Legal',
     contactUs: 'Contacto',
     sendMessage: 'Enviar Mensaje',
     homeNav: 'Inicio',
@@ -141,7 +141,7 @@ if (window.location.hash) {
     document.getElementById('Name').placeholder = 'Nombre';
     document.getElementById('Email').placeholder = 'Correo Electrónico';
     document.getElementById('messageBox').placeholder =
-      'Que podemos hacer por ti?';
+      '¿Que podemos hacer por ti?';
     document.getElementById('sendMessageBox').value = 'Enviar';
     document.getElementById('holiday').innerHTML =
       'Organizamos sus viajes de negocios / vacaciones a medida alrededor del mundo. Nos encargamos de que todas sus necesidades estén cubiertas sin preocuparse de nada solo de disfrutar.';
@@ -152,7 +152,7 @@ if (window.location.hash) {
     document.getElementById('student').innerHTML =
       'Nos dedicamos a la inscripción del estudiante en la Universidad y le acompañamos en todo el proceso de adaptación e instalación.';
     document.getElementById('shop').innerHTML =
-      'Le asesoramos y orientamos en la adquisicion de prendas y complementos de lujo.';
+      'Le asesoramos y orientamos en la adquisición de prendas y complementos de lujo.';
     document.getElementById('legal').innerHTML =
       'Damos la solución más acorde a sus necesidades.';
   }
