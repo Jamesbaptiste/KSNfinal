@@ -100,7 +100,7 @@ let language = {
     cars: 'Coches Exclusivos',
     watches: 'Relojes',
     students: 'Estudiantes Extranjeros',
-    shopping: 'Comprador Personal',
+    shopping: 'Personal Shopper',
     legalCounsel: 'Consejería Legal',
     contactUs: 'Contacto',
     sendMessage: 'Enviar Mensaje',
