@@ -3,6 +3,11 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+window.addEventListener('scroll', () => {
+  const langAbbreviation = document.querySelector('button');
+  langAbbreviation.classList.toggle('sticky', window.scrollY > 0);
+});
+
 function toggleMenu() {
   const menuToggle = document.querySelector('.menuToggle');
 
