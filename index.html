@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -77,13 +78,33 @@
             </svg>
       </ul>
     </header>
+
     <div class="flags">
-      <a href="#eng" data-reload class="text-center"
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">EN
+          <i class="fa fa-caret-down" ></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#eng" data-reload class="text-center"
+        ><span class="flag-icon flag-icon-us"></span
+      > English</a>
+      <a href="#es" data-reload class="text-center"
+        ><span class="flag-icon flag-icon-es"></span
+      > Español</a>
+            <a href="#sa" data-reload class="text-center"
+        ><span class="flag-icon flag-icon-sa"></span
+      > عربى</a>
+        </div>
+      </div> 
+      <!-- <a href="#eng" data-reload class="text-center"
         ><span class="flag-icon flag-icon-us"></span
       ></a>
       <a href="#es" data-reload class="text-center"
         ><span class="flag-icon flag-icon-es"></span
       ></a>
+            <a href="#sa" data-reload class="text-center"
+        ><span class="flag-icon flag-icon-sa"></span
+      ></a> -->
     </div>
     <section class="banner" id="banner">
       <video playsinline preload="auto" autoplay muted loop>

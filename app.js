@@ -12,6 +12,22 @@ function toggleMenu() {
   navigation.classList.toggle('active');
 }
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById('myDropdown').classList.toggle('show');
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById('myDropdown');
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+};
+
 function holidayDescription() {
   // const descriptionShow = document.querySelector('.showDescription');
   const holidayDescription = document.getElementById('holiday');
@@ -61,7 +77,6 @@ function legalDescription() {
 //define language reload anchors
 let dataReload = document.querySelectorAll('[data-reload]');
 
-// let joke = ('Ti'.style.color = 'green');
 //language translation
 let language = {
   eng: {
@@ -113,6 +128,30 @@ let language = {
     contactMessage: 'Qué podemos hacer por ti?',
     contactSend: 'Enviar',
   },
+  sa: {
+    banner: `نحن هنا من أجل`,
+    ti: `أنت`,
+    aboutUsTitle: 'معلومات عنا',
+    about:
+      'في KSN Connections ، لدينا خبرة تزيد عن 25 عامًا في تقديم الخدمات في جميع أنحاء العالم ، وخاصة في الولايات المتحدة الأمريكية وأمريكا الوسطى وأوروبا ومنطقة الخليج وشمال إفريقيا. الخدمات المقدمة شخصية تمامًا وخاصة وحصرية. نحن نتكيف مع احتياجات وتفضيلات كل عميل مع إمكانية مرافقة عملائنا شخصيًا طوال العملية',
+    servicesTitle: 'الخدمات المتوفرة',
+    dreamHol: 'عطلة أحلامك',
+    cars: 'قوارب وسيارات فاخرة',
+    watches: 'الساعات',
+    students: 'توفير المساعة للطلبة الأجانب',
+    shopping: 'خدمة المتسوق الشخصي ',
+    legalCounsel: 'المشورة القانونية للهجرة',
+    contactUs: 'اتصل',
+    sendMessage: 'إرسال رسالة',
+    homeNav: 'Inicio',
+    aboutNav: 'Sobre Nosostros',
+    servicesNav: 'Servicios',
+    contactNav: 'Contacto',
+    contactName: 'Nombre',
+    contactEmail: 'Correo Electrónico',
+    contactMessage: 'Qué podemos hacer por ti?',
+    contactSend: 'Enviar',
+  },
 };
 //define language via window has
 if (window.location.hash) {
@@ -155,6 +194,50 @@ if (window.location.hash) {
       'Le asesoramos y orientamos en la adquisición de prendas y complementos de lujo.';
     document.getElementById('legal').innerHTML =
       'Damos la solución más acorde a sus necesidades.';
+  }
+}
+
+//define language via window has
+if (window.location.hash) {
+  if (window.location.hash === '#sa') {
+    // document.getElementById('content').innerHTML = `Estamos aqui para ti`;
+    // document.getElementById('ti').style.color = 'red';
+    ti.textContent = language.sa.ti;
+    content.textContent = language.sa.banner;
+    aboutUsTitle.textContent = language.sa.aboutUsTitle;
+    aboutUs.textContent = language.sa.about;
+    servicesTitle.textContent = language.sa.servicesTitle;
+    dreamHoliday.textContent = language.sa.dreamHol;
+    cars.textContent = language.sa.cars;
+    watches.textContent = language.sa.watches;
+    students.textContent = language.sa.students;
+    shopping.textContent = language.sa.shopping;
+    legalCounsel.textContent = language.sa.legalCounsel;
+    contactUs.textContent = language.sa.contactUs;
+    sendMessage.textContent = language.sa.sendMessage;
+    // Name.placeholder.textContent = language.es.contactName;
+    homeNav.textContent = language.sa.homeNav;
+    aboutNav.textContent = language.sa.aboutNav;
+    servicesNav.textContent = language.sa.servicesNav;
+    contactNav.textContent = language.sa.contactNav;
+
+    document.getElementById('Name').placeholder = 'اسم';
+    document.getElementById('Email').placeholder = 'بريد إلكتروني';
+    document.getElementById('messageBox').placeholder =
+      'ماذا يمكننا أن نفعل لك؟';
+    document.getElementById('sendMessageBox').value = 'إرسال';
+    document.getElementById(
+      'holiday'
+    ).innerHTML = `نقوم بتنظيم رحلات العمل/ إجازات خاصة في جميع أنحاء العالم تتلاءم لمتطلباتكم. نحرص على تغطية كل احتيجاتكم كي لا تفكروا  في شيء سوى الإستمتاع`;
+    document.getElementById('car').innerHTML =
+      'نقوم بالتوفير والحصول على أي نوع من البواخرأو القوارب (سواءاً المبيعات الخاصة أو العامة) بأفضل الأسعار. بخبرتنا المتميزة والرائدة في سلسلات السيارات الخاصة';
+    document.getElementById('watch').innerHTML =
+      'نقوم بمساعدتك على الحصول على جميع أنواع الساعات الفاخرة ذات التصاميم الخاصة  بجميع انحاء العالم';
+    document.getElementById('student').innerHTML =
+      'نلتزم بالمراحل التسجيلية للطالب بالجامعة ونقوم بمرافقته خلال فترة تأقلمه وإقامته';
+    document.getElementById('shop').innerHTML =
+      'ننصحك ونرشدك في اقتناء الملابس والإكسسوارات الفاخرة';
+    document.getElementById('legal').innerHTML = 'نقوم بتوفيرالحل المناسب لك';
   }
 }
 for (i = 0; i <= dataReload.length - 1; i++) {
