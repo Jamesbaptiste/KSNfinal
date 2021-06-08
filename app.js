@@ -143,12 +143,12 @@ let language = {
     legalCounsel: 'المشورة القانونية للهجرة',
     contactUs: 'اتصل',
     sendMessage: 'إرسال رسالة',
-    homeNav: 'Inicio',
-    aboutNav: 'Sobre Nosostros',
-    servicesNav: 'Servicios',
-    contactNav: 'Contacto',
-    contactName: 'Nombre',
-    contactEmail: 'Correo Electrónico',
+    homeNav: 'البدء',
+    aboutNav: 'معلومات عنا',
+    servicesNav: 'خدمات',
+    contactNav: 'اتصال',
+    contactName: 'اسم',
+    contactEmail: 'بريد إلكتروني',
     contactMessage: 'Qué podemos hacer por ti?',
     contactSend: 'Enviar',
   },
@@ -194,6 +194,8 @@ if (window.location.hash) {
       'Le asesoramos y orientamos en la adquisición de prendas y complementos de lujo.';
     document.getElementById('legal').innerHTML =
       'Damos la solución más acorde a sus necesidades.';
+    document.getElementById('langAbbrev').innerHTML =
+      'ES <i i class="fa fa-caret-down"></i>';
   }
 }
 
@@ -238,6 +240,8 @@ if (window.location.hash) {
     document.getElementById('shop').innerHTML =
       'ننصحك ونرشدك في اقتناء الملابس والإكسسوارات الفاخرة';
     document.getElementById('legal').innerHTML = 'نقوم بتوفيرالحل المناسب لك';
+    document.getElementById('langAbbrev').innerHTML =
+      'AR <i i class="fa fa-caret-down"></i>';
   }
 }
 for (i = 0; i <= dataReload.length - 1; i++) {
