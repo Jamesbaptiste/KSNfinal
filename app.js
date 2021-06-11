@@ -134,11 +134,11 @@ let language = {
     contactSend: 'Enviar',
   },
   sa: {
-    banner: `نحن هنا من أجل`,
-    ti: `أنت`,
+    banner: `نحن هنا من`,
+    ti: `أجلك`,
     aboutUsTitle: 'معلومات عنا',
     about:
-      'في KSN Connections ، لدينا خبرة تزيد عن 25 عامًا في تقديم الخدمات في جميع أنحاء العالم ، وخاصة في الولايات المتحدة الأمريكية وأمريكا الوسطى وأوروبا ومنطقة الخليج وشمال إفريقيا. الخدمات المقدمة شخصية تمامًا وخاصة وحصرية. نحن نتكيف مع احتياجات وتفضيلات كل عميل مع إمكانية مرافقة عملائنا شخصيًا طوال العملية',
+      'نمتاز في KSN  كونيكشن بخبرة تزيد عن 25 عاماً في تقديم الخدمات وذلك بجميع أنحاء العالم وخاصة في الولايات  المتحدة الأمريكية وأمريكة الوسطى وأوروبا ومنطقة الخليج العربي وشمال إفريقيا. كل الخدمات التي نوفرها هي جد شخصية وخاصة ومميزة. كما يمكننا التكيف مع جميع احتياجات وأولويات زبنائنا الكرام وتقديم لهم فرصة المرافقة الشخصية طوال العملية',
     servicesTitle: 'الخدمات المتوفرة',
     dreamHol: 'عطلة أحلامك',
     cars: 'قوارب وسيارات فاخرة',
@@ -147,11 +147,11 @@ let language = {
     shopping: 'خدمة المتسوق الشخصي ',
     legalCounsel: 'المشورة القانونية للهجرة',
     contactUs: 'اتصل',
-    sendMessage: 'إرسال رسالة',
-    homeNav: 'البدء',
-    aboutNav: 'معلومات عنا',
-    servicesNav: 'خدمات',
-    contactNav: 'اتصال',
+    sendMessage: 'بعث رسالة',
+    homeNav: 'الصفحة الرئيسية',
+    aboutNav: 'معلومات حولنا',
+    servicesNav: 'الخدمات',
+    contactNav: 'تواصل معنا',
     contactName: 'اسم',
     contactEmail: 'بريد إلكتروني',
     contactMessage: 'Qué podemos hacer por ti?',
@@ -228,10 +228,9 @@ if (window.location.hash) {
     servicesNav.textContent = language.sa.servicesNav;
     contactNav.textContent = language.sa.contactNav;
 
-    document.getElementById('Name').placeholder = 'اسم';
-    document.getElementById('Email').placeholder = 'بريد إلكتروني';
-    document.getElementById('messageBox').placeholder =
-      'ماذا يمكننا أن نفعل لك؟';
+    document.getElementById('Name').placeholder = 'الإسم';
+    document.getElementById('Email').placeholder = 'البريد الألكتروني';
+    document.getElementById('messageBox').placeholder = 'كيف يمكننا مساعدتك؟';
     document.getElementById('sendMessageBox').value = 'إرسال';
     document.getElementById(
       'holiday'
