@@ -58,6 +58,17 @@ body {
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+/* .CTA {
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: 40px;
+    color: #000;
+    background: #f9f9f9;
+    font-size: 1.5em;
+    font-weight: 500;
+    border: none;
+} */
 
 .show {
   display: block;
